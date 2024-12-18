@@ -189,7 +189,7 @@ _basic_subobj:  _simple_subobj | act
 // activity..."
 act: _activity_function "(" _act_abundance [ "," ma ] ")"
 // abundances and genes are in 2.0 not allowed with activity!!!
-_act_abundance: protein | complex_abundance | complex_list | rna | gene | micro_rna | fusion
+_act_abundance: protein | complex_abundance | complex_list | rna | gene | micro_rna | fusion| abundance
 _ma : "molecularActivity" | "ma"
 ma: _ma "(" ( nn | ma_default ) ")"
 _activity_function: "activity" | "act"

@@ -210,7 +210,7 @@ pep: "peptidaseActivity" | "pep"
 phos: "phosphataseActivity" | "phos"
 ribo: "ribosylationActivity" | "ribo"
 tscript: "transcriptionalActivity" | "tscript"
-tport: "transportActivity" | "tport"
+
 
 ma_default: cat
               | chap
@@ -220,7 +220,6 @@ ma_default: cat
               | phos
               | ribo
               | tscript
-              | tport
 // ---------------------------------------------------------------------------------------------------------------------
 
 _simple_subobj: _non_protein_subobj

@@ -274,11 +274,12 @@ UNDERSCORE: "_"
 // ref: http://openbel.org/language/version_2.0/bel_specification_version_2.0.html#XcomplexA
 
 // TODO: add to complex_abundance location ! http://openbel.org/language/version_2.0/bel_specification_version_2.0.html#_location_loc
-complex_abundance: _complex_function "(" nn [ loc ] ")"
+complex_abundance: _complex_function "(" nn [ comp_changes ] ")"
 complex_list: _complex_function "(" list_complex ")"
 _complex_function: "complexAbundance" | "complex"
 list_complex: _list_complex_entry ( "," _list_complex_entry)*
 _list_complex_entry: _basic_subobj
+comp_changes: (loc)*
 // ---------------------------------------------------------------------------------------------------------------------
 
 _non_protein_subobj: abundance | population | gene | micro_rna | rna
